@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --text: #070a18;
+  --background: #f3f4fb;
+  --primary: #1e2966;
+  --secondary: #d0d5f1;
+  --accent: #384cbc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary);
+  background: var(--secondary);
+}
+
+header nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+header nav a {
+  padding: 0.5rem 1rem;
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-radius: 0.7rem;
+  transition: all 500ms;
+}
+header nav a:hover {
+  transform: scale(1.1);
+  filter: brightness(0.9);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.scroll-top {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.container {
+  height: 100vh;
+  padding: 1rem;
+  position: relative;
+}
+
+.container-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--secondary);
+  font-size: 15rem;
+  text-transform: capitalize;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+}
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 5rem;
+}
+.avatar {
+  width: 35%;
+  border-radius: 50%;
+}
+.home-info span {
+  font-size: 3rem;
+}
+.home-info p {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+.home-info .name {
+  letter-spacing: normal;
+  font-size: 5rem;
+  font-weight: bold;
+}
