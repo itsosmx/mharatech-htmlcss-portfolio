@@ -16,14 +16,13 @@
         <a href="#contact">contact</a>
         <a href="#countries">countries</a>
         <a href="#resume">resume</a>
-        <a href="#goodbye">goodbye</a>
       </nav>
     </header>
     <a class="scroll-top" href="#header">UP</a>
     <section class="container" id="home">
       <h3 class="container-title">Home</h3>
       <div class="home-content">
-        <img class="avatar" src="avatar.png" alt="Osama Hussein" />
+        <img class="avatar" src="images/avatar.png" alt="Osama Hussein" />
         <div class="home-info">
           <div class="home-box">
             <span>Hello, my name</span>
@@ -37,21 +36,85 @@
     </section>
     <section class="container" id="hobbies">
       <h3 class="container-title">hobbies</h3>
+      <div class="hobbies-box">
+        <div class="image">
+          <img src="images/gaming.jpg" alt="Play games" />
+        </div>
+        <p>I'm a gamer, nothing better than play with my friends with the sounds of laughter and screaming spread in the air.</p>
+      </div>
+      <div class="hobbies-box">
+        <div class="image">
+          <img src="images/programming.jpg" alt="programming" />
+        </div>
+        <p>Programming is something that runs through my veins.</p>
+      </div>
     </section>
     <section class="container" id="birthday">
       <h3 class="container-title">birthday</h3>
+      <div class="birthday-info">
+        <span>My birthday</span>
+        <p>20, December</p>
+      </div>
+      <form class="message-box" action="#thanks">
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type a message."></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
     <section class="container" id="contact">
       <h3 class="container-title">contact</h3>
+      <form action="#thanks" class="contact-form">
+        <div class="field">
+          <label>Your Name: </label>
+          <input class="input" type="text" placeholder="Name" />
+        </div>
+        <div class="field">
+          <label>Your Email: </label>
+          <input class="input" type="text" placeholder="Email" />
+        </div>
+        <div class="field">
+          <label>Your Message: </label>
+          <textarea class="input" name="" id="message" cols="30" rows="10" placeholder="Type your message."></textarea>
+        </div>
+        <div class="field">
+          <button class="input submit" type="submit">Send Email</button>
+        </div>
+      </form>
     </section>
     <section class="container" id="countries">
       <h3 class="container-title">countries</h3>
+      <div class="countries-slider">
+        <div class="box">
+          <p>Saudi Arabia</p>
+          <div class="image">
+            <img src="/images/saudi-arabia.jpg" alt="saudi-arabia" />
+          </div>
+        </div>
+        <div class="box">
+          <p>Plastine</p>
+          <div class="image">
+            <img src="/images/plastine.jpg" alt="plastine" />
+          </div>
+        </div>
+        <div class="box">
+          <p>Turkey</p>
+          <div class="image">
+            <img src="/images/turkey.png" alt="turkey" />
+          </div>
+        </div>
+        <div class="box">
+          <p>Russia</p>
+          <div class="image">
+            <img src="/images/russia.jpg" alt="russia" />
+          </div>
+        </div>
+      </div>
     </section>
     <section class="container" id="resume">
       <h3 class="container-title">resume</h3>
     </section>
-    <section class="container" id="goodbye">
-      <h3 class="container-title">goodbye</h3>
+    <section class="container" id="thanks">
+      <h3 class="container-title">thanks</h3>
+      <p>Thank You.</p>
     </section>
   </body>
 </html>
